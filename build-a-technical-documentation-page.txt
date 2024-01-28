@@ -1,0 +1,19 @@
+#nav-bar{
+  position:fixed;
+  display:flex;
+  align-items: center;  
+  top: 0px; 
+  flex-direction:row;
+  justify-content:space-evenly;
+  ;
+}
+@media only screen and(max-width: 200px){
+  #nav-bar{
+    color:blue;
+  }
+}
+.nav-link{
+  display:flex;
+  flex-direction:row;
+  padding:10px;
+}
