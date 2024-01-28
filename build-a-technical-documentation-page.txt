@@ -1,19 +1,52 @@
-#nav-bar{
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Technical Documentation Page</title>
+  </head>
+  <body>
+    <main id="main-doc">
+       <section class="main-section" id="Introduction"><header>Introduction</header><p>Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation</p><p>Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly procedural), object-oriented and functional programming. It is often described as a "batteries included" language due to its comprehensive standard library</p></section> 
+       <section class="main-section" id="Philosophy"><header>Philosophy</header><p>The core principles of python are:</p><ul><li>Beautiful is better than ugly.</li><li>Explicit is better than implicit.</li><li>Simple is better than complex.</li><li>Complex is better than complicated.</li></ul></section>
+       <section class="main-section" id="Syntax_and_semantics"><header>Syntax and semantics</header><p>Python is meant to be an easily readable language. Its formatting is visually uncluttered and often uses English keywords where other languages use punctuation. Unlike many other languages, it does not use curly brackets to delimit blocks, and semicolons after statements are allowed but rarely used. It has fewer syntactic exceptions and special cases than C or Pascal.</p><p>Examples of python code:</p><ol><li><code>print "Hello World"</code></li></ol></section>
+       <section class="main-section" id="Control_flow"><header>Control flow</header><p>The control structures of python are:</p><ul><li><p>if statement checks whether the condition is true; </p><code>if age<20:</code></li><li><p>def statement is used for creating functions:</p><code>def sum(a,b):return (a+b)</code></li></ul></section>
+       <section class="main-section" id="Expressions"><header>Expressions</header><p>Expressions are mathematical and un-mathematical signs and symbols to manipulate values</p><p>Examples include:</p><ul><li><p>The sign + is used for concatenation</p><code>print("bram"+"wel")</code></li><li><p>The symbol == is used to check for similarities of values</p><code>if time==Time;</code></li></ul></section>
+    <nav id="navbar">
+      <header>Modules</header>
+      <ul>
+      <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+      <li><a  class="nav-link"href="#Philosophy">Philosophy</a></li>
+      <li><a  class="nav-link"href="#Syntax_and_semantics">Syntax and semantics</a></li>
+      <li><a  class="nav-link"href="#Control_flow">Control flow</a></li>
+      <li><a class="nav-link" href="#Expressions">Expressions</a></li>
+      </ul>
+    </nav>
+    </main>
+  </body>
+</html>
+
+<styles>
+header{
+  color:black;
+  text-align:center;
+  border-bottom:3px solid black;
+  font-family:Times New Roman;
+}
+#navbar{
   position:fixed;
-  display:flex;
-  align-items: center;  
-  top: 0px; 
-  flex-direction:row;
-  justify-content:space-evenly;
-  ;
+  top:20px;
+  left:0px;
+  height:100%;
+  border-right:solid black;
 }
-@media only screen and(max-width: 200px){
-  #nav-bar{
-    color:blue;
+main{
+  position:absolute;
+  top:20px;
+  left:200px;
+}
+@media screen and (max-width){
+  li{
+    background-color:blue;
+
   }
-}
-.nav-link{
-  display:flex;
-  flex-direction:row;
-  padding:10px;
-}
+</styles>
